@@ -25,7 +25,7 @@ nav {
 }
 
 .bg-blue, h2 {
-    background-color: var(--blue);
+    background-color: var(--bg-green);
 }
 
 a {
@@ -33,5 +33,10 @@ a {
 }
 
 a:hover {
+    color: var(--main);
+}
+
+.btn{
+    background-color: var(--bg-green);
     color: var(--main);
 }

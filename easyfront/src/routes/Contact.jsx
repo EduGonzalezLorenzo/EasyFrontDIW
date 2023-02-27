@@ -52,7 +52,7 @@ export default function Contact() {
                         <label className="form-check-label" htmlFor="condiciones">Aceptar el envio de los datos introducidos en este formulario.</label>
                     </div>
                     <div className="text-center">
-                        <input className="btn btn-secondary" type="submit" value="Contactar" disabled={email === "" && phone === ""} />
+                        <input className="btn" type="submit" value="Contactar" disabled={email === "" && phone === ""} />
                     </div>
                     <input type="hidden" name="_next" value="http://localhost:3000" />
                 </form>
