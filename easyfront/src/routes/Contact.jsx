@@ -19,7 +19,7 @@ export default function Contact() {
                 </p>
             </section>
             <section>
-                <h2>Formulario de contacto</h2>
+                <h2 className='pl-3'>Formulario de contacto</h2>
                 <p>Si lo prefiere, puede dejarnos aquí sus datos y nos pondremos en contacto con usted en la mayor brevedad posible.
                 </p>
                 <form>
