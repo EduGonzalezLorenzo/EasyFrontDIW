@@ -13,7 +13,6 @@ import Palette6 from "../assets/color_palette_6.webp";
 
 export default function Gallery() {
 
-
     return (
         <div className="gallery_container container text-center">
             <h1>Configure su Web</h1>
