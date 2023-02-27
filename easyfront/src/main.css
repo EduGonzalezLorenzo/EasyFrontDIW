@@ -1,13 +1,15 @@
 :root {
     --main: #E9F2FA;
-    --green-light:#bde701;
+
+    --green-light: #acf05e;
     --green: #9BBF00;
-    --bg-green: #4B9528;
     --green-strong: #4B9528;
-    --bg-green: #408023;
+    --bg-green: #39721f;
+
+    --blue-light: #00aae2;
     --blue: #007BA4;
     --blue-strong: #006690;
-    --bg-blue:#015275;
+    --bg-blue: #015275;
 }
 
 body {
@@ -25,7 +27,8 @@ nav {
 }
 
 .NavLink:hover {
-    background-color: var(--green);
+    background-color: var(--green-strong);
+    color: var(--green-light);
 }
 
 .bg-blue, h2 {
@@ -50,7 +53,21 @@ a:hover {
     color: var(--main);
 }
 
-.rate{
+.rate-low, .rate-low-item {
     background-color: var(--main);
     color: var(--bg-blue);
+}
+
+.rate-medium, .rate-medium-item {
+    background-color: var(--blue);
+    color: var(--main);
+}
+
+.rate-full, .rate-full-item {
+    background-color: var(--green-strong);
+    color: var(--main);
+}
+
+.rates > *{
+    border-radius: 8%;
 }
