@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Shantell+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* .gallery_container {
+    background-color: antiquewhite;
+} */
+
+/* .img_gallery {
+    width: 200px;
+} */
+
+
+.selected {
+    background-color: aqua;
+}
+
+.font_example {
+    font-size: 2em;
+}
+
+#shantell {
+    font-family: 'Shantell Sans', cursive;
+}
+
+#glook {
+    font-family: 'Gloock', serif;
+}
+
+#ubuntu {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#bebas {
+    font-family: 'Bebas Neue', cursive;
+}
+
+#dancing {
+    font-family: 'Dancing Script', cursive;
+}
+
+#roboto {
+    font-family: 'Roboto', sans-serif;
+}

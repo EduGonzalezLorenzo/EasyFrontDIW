@@ -1,0 +1,17 @@
+body{
+    background-color: var(--bg-blue);
+    color: var(--main);
+}
+
+nav {
+    background-color: var(--bg-green);
+    font-size: 20px;
+}
+
+.NavLink {
+    color: var(--main);
+}
+
+.bg-blue, h2{
+    background-color: var(--blue);
+}
