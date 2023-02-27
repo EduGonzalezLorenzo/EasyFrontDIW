@@ -1,5 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
-import logo from "../assets/Icon.png"
+import logo from "../assets/Icon.webp"
 
 export default function Navigation() {
     return (

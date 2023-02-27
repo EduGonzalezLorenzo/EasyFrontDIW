@@ -1,6 +1,6 @@
-import logo from "../assets/Icon.png"
-import thinkingman from "../assets/thinkingMan.png";
-import ejemplo from "../assets/Plantilla_web_3.jpg";
+import logo from "../assets/Icon.webp"
+import thinkingman from "../assets/thinkingMan.webp";
+import ejemplo from "../assets/Plantilla_web_3.webp";
 
 export default function Information() {
     return (
