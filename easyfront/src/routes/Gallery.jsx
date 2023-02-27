@@ -16,8 +16,9 @@ export default function Gallery() {
 
     return (
         <div className="gallery_container container">
+            <h1>Configure su Web</h1>
             <div className="structure_selector">
-                <h2>Seleccione la estructura de la página</h2>
+                <h2 className='pl-3'>Seleccione la estructura de la página</h2>
                 <div className="gallery_images_container row">
                     <div className='col-12 col-sm-6 mb-3' >
                         <input type="radio" name='plant' id='plant1'/>
@@ -42,7 +43,7 @@ export default function Gallery() {
             </div>
 
             <div className="color_selector">
-                <h2>Seleccione el esquema de color</h2>
+                <h2 className='pl-3'>Seleccione el esquema de color</h2>
                 <div className="gallery_palettes_container row">
                     <div className='col-12 col-sm-6 col-lg-4 mb-3'>
                         <input type="radio" name='color' id='palette1'/>
@@ -73,7 +74,7 @@ export default function Gallery() {
             </div>
 
             <div className="font_selector">
-                <h2>Seleccione la fuente</h2>
+                <h2 className='pl-3'>Seleccione la fuente</h2>
                 <div className="gallery_fonts_container">
                     <div className='col-12'>
                         <input type="radio" name='font' id='font1'/>
