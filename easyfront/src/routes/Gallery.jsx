@@ -17,11 +17,15 @@ export default function Gallery() {
     const [selected, setSelected] = useState("");
 
     function showSelected(id) {
-        console.log(id);
-        // let selection = document.getElementById(id);
-        // console.log(selection);
-        // selection.className += " selected";
-        // setSelected(id);
+        // console.log(id);
+        let selection = document.getElementById(id).parentNode;
+        console.log(selection);
+        if(selection.className.includes("selected")) {
+            selection.className = "col-12 col-sm-6 mb-3";
+        } else {
+            selection.className += "col-12 col-sm-6 mb-3 selected";
+        }
+
     }
 
     useEffect(() => {
@@ -36,22 +40,22 @@ export default function Gallery() {
             <div className="structure_selector">
                 <h2>Seleccione la estructura de la página</h2>
                 <div className="gallery_images_container row">
-                    <div className='col-12 col-sm-6 mb-3' onClick={(event) => showSelected(event.target.id)}>
-                        <input className='radio_selector' type="radio" name='plant' id='plant1' />
+                    <div className='col-12 col-sm-6 mb-3' onChange={(event) => showSelected(event.target.id)}>
+                        <input type="radio" name='plant' id='plant1' />
                         <label htmlFor="plant1"><img className="img_gallery img-fluid" src={Plantilla1} alt="plantilla 1" /></label>
                     </div>
 
-                    <div className='col-12 col-sm-6 mb-3' onClick={(event) => showSelected(event.target.id)}>
+                    <div className='col-12 col-sm-6 mb-3' onChange={(event) => showSelected(event.target.id)}>
                         <input type="radio" name='plant' id='plant2'/>
                         <label htmlFor="plant2"><img className="img_gallery img-fluid" src={Plantilla2} alt="plantilla 2" /></label>
                     </div>
 
-                    <div className='col-12 col-sm-6 mb-3' onClick={(event) => showSelected(event.target.id)}>
+                    <div className='col-12 col-sm-6 mb-3' onChange={(event) => showSelected(event.target.id)}>
                         <input type="radio" name='plant' id='plant3' />
                         <label htmlFor="plant3"><img className="img_gallery img-fluid" src={Plantilla3} alt="plantilla 3" /></label>
                     </div>
 
-                    <div className='col-12 col-sm-6 mb-3' onClick={(event) => showSelected(event.target.id)}>
+                    <div className='col-12 col-sm-6 mb-3' onChange={(event) => showSelected(event.target.id)}>
                         <input type="radio" name='plant' id='plant4' />
                         <label htmlFor="plant4"><img className="img_gallery img-fluid" src={Plantilla4} alt="plantilla 4" /></label>
                     </div>
