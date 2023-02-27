@@ -18,13 +18,20 @@ export default function Gallery() {
 
     function showSelected(id) {
         // console.log(id);
-        let selection = document.getElementById(id).parentNode;
+        let selection = document.getElementById(id);
         console.log(selection);
-        if(selection.className.includes("selected")) {
-            selection.className = "col-12 col-sm-6 mb-3";
+        if(selection.cheked) {
+            selection.parentNode.className = "col-12 col-sm-6 mb-3";
+            console.log("checked: " + selection.parentNode.className)
         } else {
-            selection.className = "col-12 col-sm-6 mb-3 selected";
+            selection.parentNode.className = "col-12 col-sm-6 mb-3 selected";
+            console.log("nochecked: " + selection.parentNode.className)
         }
+        // if(selection.className.includes("selected")) {
+        //     selection.className = "col-12 col-sm-6 mb-3";
+        // } else {
+        //     selection.className = "col-12 col-sm-6 mb-3 selected";
+        // }
 
     }
 
@@ -65,24 +72,62 @@ export default function Gallery() {
             <div className="color_selector">
                 <h2>Seleccione el esquema de color</h2>
                 <div className="gallery_palettes_container row">
-                    <img className="palette_gallery col-12 col-sm-6 col-lg-4 mb-3" src={Palette1} alt="color palette" />
-                    <img className="palette_gallery col-12 col-sm-6 col-lg-4 mb-3" src={Palette2} alt="color palette" />
-                    <img className="palette_gallery col-12 col-sm-6 col-lg-4 mb-3" src={Palette3} alt="color palette" />
-                    <img className="palette_gallery col-12 col-sm-6 col-lg-4 mb-3" src={Palette4} alt="color palette" />
-                    <img className="palette_gallery col-12 col-sm-6 col-lg-4 mb-3" src={Palette5} alt="color palette" />
-                    <img className="palette_gallery col-12 col-sm-6 col-lg-4 mb-3" src={Palette6} alt="color palette" />
+                    <div className='col-12 col-sm-6 col-lg-4 mb-3'>
+                        <input type="radio" name='color' id='palette1' onChange={(event) => showSelected(event.target.id)}/>
+                        <label htmlFor="palette1"><img className="img_gallery img-fluid" src={Palette1} alt="palette 1" /></label>
+                    </div>
+                    <div className='col-12 col-sm-6 col-lg-4 mb-3'>
+                        <input type="radio" name='color' id='palette2' onChange={(event) => showSelected(event.target.id)}/>
+                        <label htmlFor="palette2"><img className="img_gallery img-fluid" src={Palette2} alt="palette 2" /></label>
+                    </div>
+                    <div className='col-12 col-sm-6 col-lg-4 mb-3'>
+                        <input type="radio" name='color' id='palette3' onChange={(event) => showSelected(event.target.id)}/>
+                        <label htmlFor="palette3"><img className="img_gallery img-fluid" src={Palette3} alt="palette 3" /></label>
+                    </div>
+                    <div className='col-12 col-sm-6 col-lg-4 mb-3'>
+                        <input type="radio" name='color' id='palette4' onChange={(event) => showSelected(event.target.id)}/>
+                        <label htmlFor="palette4"><img className="img_gallery img-fluid" src={Palette4} alt="palette 4" /></label>
+                    </div>
+                    <div className='col-12 col-sm-6 col-lg-4 mb-3'>
+                        <input type="radio" name='color' id='palette5' onChange={(event) => showSelected(event.target.id)}/>
+                        <label htmlFor="palette5"><img className="img_gallery img-fluid" src={Palette5} alt="palette 5" /></label>
+                    </div>
+                    <div className='col-12 col-sm-6 col-lg-4 mb-3'>
+                        <input type="radio" name='color' id='palette6' onChange={(event) => showSelected(event.target.id)}/>
+                        <label htmlFor="palette6"><img className="img_gallery img-fluid" src={Palette6} alt="palette 6" /></label>
+                    </div>
+                    
                 </div>
             </div>
 
             <div className="font_selector">
                 <h2>Seleccione la fuente</h2>
                 <div className="gallery_fonts_container">
-                    <p className="font_example" id="shantell"> Shantell - Ejemplo de fuente</p>
-                    <p className="font_example" id="glook"> Glook - Ejemplo de fuente</p>
-                    <p className="font_example" id="ubuntu"> Ubuntu - Ejemplo de fuente</p>
-                    <p className="font_example" id="bebas"> Bebas Neue - Ejemplo de fuente</p>
-                    <p className="font_example" id="dancing"> Dancing Script - Ejemplo de fuente</p>
-                    <p className="font_example" id="roboto"> Roboto - Ejemplo de fuente</p>
+                    <div className='col-12'>
+                        <input type="radio" name='font' id='font1' onChange={(event) => showSelected(event.target.id)}/>
+                        <label htmlFor="font1"><p className="font_example" id="shantell"> Shantell - Ejemplo de fuente</p></label>
+                    </div>
+                    <div className='col-12'>
+                        <input type="radio" name='font' id='font2' onChange={(event) => showSelected(event.target.id)}/>
+                        <label htmlFor="font2"><p className="font_example" id="glook"> Glook - Ejemplo de fuente</p></label>
+                    </div>
+                    <div className='col-12'>
+                        <input type="radio" name='font' id='font3' onChange={(event) => showSelected(event.target.id)}/>
+                        <label htmlFor="font3"><p className="font_example" id="ubuntu"> Ubuntu - Ejemplo de fuente</p></label>
+                    </div>
+                    <div className='col-12'>
+                        <input type="radio" name='font' id='font4' onChange={(event) => showSelected(event.target.id)}/>
+                        <label htmlFor="font4"><p className="font_example" id="bebas"> Bebas Neue - Ejemplo de fuente</p></label>
+                    </div>
+                    <div className='col-12'>
+                        <input type="radio" name='font' id='font5' onChange={(event) => showSelected(event.target.id)}/>
+                        <label htmlFor="font5"><p className="font_example" id="dancing"> Dancing Script - Ejemplo de fuente</p></label>
+                    </div>
+                    <div className='col-12'>
+                        <input type="radio" name='font' id='font6' onChange={(event) => showSelected(event.target.id)}/>
+                        <label htmlFor="font6"><p className="font_example" id="roboto"> Roboto - Ejemplo de fuente</p></label>
+                    </div>
+                    
                 </div>
             </div>
         </div>
