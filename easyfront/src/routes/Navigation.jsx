@@ -7,7 +7,7 @@ export default function Navigation() {
             <nav className="navbar navbar-expand">
                 <ul className="navbar-nav align-items-center">
                     <li className="nav-item nav-hover" >
-                        <Link to="/info" className="navbar-brand NavLink">
+                        <Link to="/" className="navbar-brand NavLink">
                             <img src={logo} alt="logo" width="50" height="50" />
                         </Link>
                     </li>

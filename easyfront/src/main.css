@@ -1,0 +1,37 @@
+:root {
+    --main: #E9F2FA;
+    --green: #9BBF00;
+    --bg-green: #4B9528;
+    --blue: #007BA4;
+    --bg-blue: #006690;
+}
+
+body {
+    background-color: var(--bg-blue);
+    color: var(--main);
+}
+
+nav {
+    background-color: var(--bg-green);
+    font-size: 20px;
+}
+
+.NavLink {
+    color: var(--main);
+}
+
+.NavLink:hover {
+    background-color: var(--green);
+}
+
+.bg-blue, h2 {
+    background-color: var(--blue);
+}
+
+a {
+    color: var(--green);
+}
+
+a:hover {
+    color: var(--main);
+}
