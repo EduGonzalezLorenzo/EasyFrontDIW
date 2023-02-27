@@ -4,7 +4,7 @@
     --green-light: #acf05e;
     --green: #9BBF00;
     --green-strong: #4B9528;
-    --bg-green: #408023;
+    --bg-green: #39721f;
 
     --blue-light: #00aae2;
     --blue: #007BA4;
@@ -59,7 +59,7 @@ a:hover {
 }
 
 .rate-medium, .rate-medium-item {
-    background-color: var(--blue-light);
+    background-color: var(--blue);
     color: var(--main);
 }
 
