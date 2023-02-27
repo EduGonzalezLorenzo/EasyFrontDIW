@@ -53,21 +53,21 @@ a:hover {
     color: var(--main);
 }
 
-.rate-low, .rate-low-item {
+.rate-low, .rate-low-item, .rate-low>h2 {
     background-color: var(--main);
     color: var(--bg-blue);
 }
 
-.rate-medium, .rate-medium-item {
-    background-color: var(--blue);
+.rate-medium, .rate-medium-item, .rate-medium>h2 {
+    background-color: var(--blue-strong);
     color: var(--main);
 }
 
-.rate-full, .rate-full-item {
-    background-color: var(--green-strong);
-    color: var(--main);
+.rate-full, .rate-full-item, .rate-full>h2 {
+    background-color: var(--green-light);
+    color: black;
 }
 
-.rates > *{
+.rates>* {
     border-radius: 8%;
 }
