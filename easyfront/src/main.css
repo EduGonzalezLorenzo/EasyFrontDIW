@@ -1,9 +1,13 @@
 :root {
     --main: #E9F2FA;
+    --green-light:#bde701;
     --green: #9BBF00;
     --bg-green: #4B9528;
+    --green-strong: #4B9528;
+    --bg-green: #408023;
     --blue: #007BA4;
-    --bg-blue: #006690;
+    --blue-strong: #006690;
+    --bg-blue:#015275;
 }
 
 body {
@@ -25,18 +29,28 @@ nav {
 }
 
 .bg-blue, h2 {
-    background-color: var(--bg-green);
+    background-color: var(--blue);
 }
 
 a {
-    color: var(--green);
+    color: var(--green-light);
 }
 
 a:hover {
+    color: var(--green);
+}
+
+.btn {
+    background-color: var(--bg-green);
     color: var(--main);
 }
 
-.btn{
-    background-color: var(--bg-green);
+.btn:hover+.hide {
+    display: block;
     color: var(--main);
+}
+
+.rate{
+    background-color: var(--main);
+    color: var(--bg-blue);
 }

@@ -53,6 +53,7 @@ export default function Contact() {
                     </div>
                     <div className="text-center">
                         <input className="btn" type="submit" value="Contactar" disabled={email === "" && phone === ""} />
+                        <p className="hide" hidden={!(email === "" && phone === "")}>Introduzca un email o un teléfono</p>
                     </div>
                     <input type="hidden" name="_next" value="http://localhost:3000" />
                 </form>
