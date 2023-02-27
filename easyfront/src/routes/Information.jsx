@@ -6,9 +6,9 @@ export default function Information() {
     return (
         <article className="container text-center">
             <section className="row mt-3 mb-3 align-items-center bg-blue">
-                <img className="img-fluid col-2" src={logo} alt="" />
+                <img className="img-fluid col-2" src={logo} alt="" width="50" height="50" />
                 <h1 className="col-8">EasyFront</h1>
-                <img className="img-fluid col-2" src={logo} alt="" />
+                <img className="img-fluid col-2" src={logo} alt="" width="50" height="50"/>
             </section>
 
             <section className="row align-items-center">
@@ -19,14 +19,14 @@ export default function Information() {
                     <p>¡Con nuestra aplicación esta a unos pocos clics de conseguirlo!</p>
                 </section>
                 <section className="col-12 col-sm-4 text-center">
-                    <img className="img-fluid" src={thinkingman} alt="" />
+                    <img className="img-fluid" src={thinkingman} alt="" width="600" height="600"/>
                 </section>
 
             </section>
             <section className="row align-items-center">
                 <h2 className="col-12">Tecnología única</h2>
                 <section className="col-4 text-center d-none d-sm-block">
-                    <img className="img-fluid" src={ejemplo} alt="" />
+                    <img className="img-fluid" src={ejemplo} alt="" width="500" height="500"/>
                 </section>
                 <section className="col-12 col-sm-8">
                     <p>
@@ -34,7 +34,7 @@ export default function Information() {
                     </p>
                 </section>
                 <section className="col-12 text-center d-block d-sm-none mb-3">
-                    <img className="img-fluid" src={ejemplo} alt="" />
+                    <img className="img-fluid" src={ejemplo} alt="" width="500" height="500"/>
                 </section>
             </section>
         </article>

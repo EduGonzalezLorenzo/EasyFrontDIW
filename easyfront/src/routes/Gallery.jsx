@@ -15,7 +15,7 @@ export default function Gallery() {
 
 
     return (
-        <div className="gallery_container container">
+        <div className="gallery_container container text-center">
             <h1>Configure su Web</h1>
             <div className="structure_selector">
                 <h2 className='pl-3'>Seleccione la estructura de la página</h2>
