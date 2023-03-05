@@ -26,7 +26,7 @@ export default function Information() {
             <section className="row align-items-center">
                 <h2 className="col-12">Tecnología única</h2>
                 <section className="col-4 text-center d-none d-sm-block">
-                    <img className="img-fluid" src={ejemplo} alt="" width="500" height="500"/>
+                    <img className="img-fluid" src={ejemplo} alt="" width="1920" height="1080"/>
                 </section>
                 <section className="col-12 col-sm-8">
                     <p>
@@ -34,7 +34,7 @@ export default function Information() {
                     </p>
                 </section>
                 <section className="col-12 text-center d-block d-sm-none mb-3">
-                    <img className="img-fluid" src={ejemplo} alt="" width="500" height="500"/>
+                    <img className="img-fluid" src={ejemplo} alt="" width="1920" height="1080"/>
                 </section>
             </section>
         </article>

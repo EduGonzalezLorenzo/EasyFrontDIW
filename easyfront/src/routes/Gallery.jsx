@@ -22,22 +22,22 @@ export default function Gallery() {
                 <div className="gallery_images_container row">
                     <div className='col-12 col-sm-6 mb-3' >
                         <input type="radio" name='plant' id='plant1'/>
-                        <label htmlFor="plant1"><img className="img_gallery img-fluid" src={Plantilla1} alt="plantilla 1" /></label>
+                        <label htmlFor="plant1"><img className="img_gallery img-fluid" src={Plantilla1} alt="plantilla 1" width="1920" height="1080"/></label>
                     </div>
 
                     <div className='col-12 col-sm-6 mb-3'>
                         <input type="radio" name='plant' id='plant2'/>
-                        <label htmlFor="plant2"><img className="img_gallery img-fluid" src={Plantilla2} alt="plantilla 2" /></label>
+                        <label htmlFor="plant2"><img className="img_gallery img-fluid" src={Plantilla2} alt="plantilla 2" width="1920" height="1080"/></label>
                     </div>
 
                     <div className='col-12 col-sm-6 mb-3'>
                         <input type="radio" name='plant' id='plant3'/>
-                        <label htmlFor="plant3"><img className="img_gallery img-fluid" src={Plantilla3} alt="plantilla 3" /></label>
+                        <label htmlFor="plant3"><img className="img_gallery img-fluid" src={Plantilla3} alt="plantilla 3" width="1920" height="1080"/></label>
                     </div>
 
                     <div className='col-12 col-sm-6 mb-3'>
                         <input type="radio" name='plant' id='plant4'/>
-                        <label htmlFor="plant4"><img className="img_gallery img-fluid" src={Plantilla4} alt="plantilla 4" /></label>
+                        <label htmlFor="plant4"><img className="img_gallery img-fluid" src={Plantilla4} alt="plantilla 4" width="1920" height="1080"/></label>
                     </div>
                 </div>
             </div>
@@ -47,27 +47,27 @@ export default function Gallery() {
                 <div className="gallery_palettes_container row">
                     <div className='col-12 col-sm-6 col-lg-4 mb-3'>
                         <input type="radio" name='color' id='palette1'/>
-                        <label htmlFor="palette1"><img className="img_gallery img-fluid" src={Palette1} alt="palette 1" /></label>
+                        <label htmlFor="palette1"><img className="img_gallery img-fluid" src={Palette1} alt="palette 1" width="1920" height="1080"/></label>
                     </div>
                     <div className='col-12 col-sm-6 col-lg-4 mb-3'>
                         <input type="radio" name='color' id='palette2'/>
-                        <label htmlFor="palette2"><img className="img_gallery img-fluid" src={Palette2} alt="palette 2" /></label>
+                        <label htmlFor="palette2"><img className="img_gallery img-fluid" src={Palette2} alt="palette 2" width="1920" height="1080"/></label>
                     </div>
                     <div className='col-12 col-sm-6 col-lg-4 mb-3'>
                         <input type="radio" name='color' id='palette3'/>
-                        <label htmlFor="palette3"><img className="img_gallery img-fluid" src={Palette3} alt="palette 3" /></label>
+                        <label htmlFor="palette3"><img className="img_gallery img-fluid" src={Palette3} alt="palette 3" width="1920" height="1080"/></label>
                     </div>
                     <div className='col-12 col-sm-6 col-lg-4 mb-3'>
                         <input type="radio" name='color' id='palette4'/>
-                        <label htmlFor="palette4"><img className="img_gallery img-fluid" src={Palette4} alt="palette 4" /></label>
+                        <label htmlFor="palette4"><img className="img_gallery img-fluid" src={Palette4} alt="palette 4" width="1920" height="1080"/></label>
                     </div>
                     <div className='col-12 col-sm-6 col-lg-4 mb-3'>
                         <input type="radio" name='color' id='palette5'/>
-                        <label htmlFor="palette5"><img className="img_gallery img-fluid" src={Palette5} alt="palette 5" /></label>
+                        <label htmlFor="palette5"><img className="img_gallery img-fluid" src={Palette5} alt="palette 5" width="1920" height="1080"/></label>
                     </div>
                     <div className='col-12 col-sm-6 col-lg-4 mb-3'>
                         <input type="radio" name='color' id='palette6'/>
-                        <label htmlFor="palette6"><img className="img_gallery img-fluid" src={Palette6} alt="palette 6" /></label>
+                        <label htmlFor="palette6"><img className="img_gallery img-fluid" src={Palette6} alt="palette 6" width="1920" height="1080"/></label>
                     </div>
                     
                 </div>
