@@ -1,18 +1,17 @@
 import './Gallery.css';
-import Plantilla1 from "../assets/Plantilla_web_1.jpg";
-import Plantilla2 from "../assets/Plantilla_web_2.jpg";
-import Plantilla3 from "../assets/Plantilla_web_3.jpg";
-import Plantilla4 from "../assets/Plantilla_web_4.jpg";
-import Palette1 from "../assets/color_palette_1.png";
-import Palette2 from "../assets/color_palette_2.png";
-import Palette3 from "../assets/color_palette_3.png";
-import Palette4 from "../assets/color_palette_4.png";
-import Palette5 from "../assets/color_palette_5.png";
-import Palette6 from "../assets/color_palette_6.png";
+import Plantilla1 from "../assets/Plantilla_web_1.webp";
+import Plantilla2 from "../assets/Plantilla_web_2.webp";
+import Plantilla3 from "../assets/Plantilla_web_3.webp";
+import Plantilla4 from "../assets/Plantilla_web_4.webp";
+import Palette1 from "../assets/color_palette_1.webp";
+import Palette2 from "../assets/color_palette_2.webp";
+import Palette3 from "../assets/color_palette_3.webp";
+import Palette4 from "../assets/color_palette_4.webp";
+import Palette5 from "../assets/color_palette_5.webp";
+import Palette6 from "../assets/color_palette_6.webp";
 
 
 export default function Gallery() {
-
 
     return (
         <div className="gallery_container container text-center">
