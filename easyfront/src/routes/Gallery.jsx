@@ -15,6 +15,8 @@ import { useState } from 'react';
 export default function Gallery() {
     const [checkedPlant, setCheckedPlant] = useState("");
     const plantillas = [Plantilla1, Plantilla2, Plantilla3, Plantilla4];
+    const [checkedColor, setCheckedColor] = useState("");
+    const palettes =[Palette1, Palette2, Palette3, Palette4, Palette5, Palette6];
 
     return (
         <div className="gallery_container container text-center">
@@ -34,31 +36,12 @@ export default function Gallery() {
             <div className="color_selector">
                 <h2 className='pl-3'>Seleccione el esquema de color</h2>
                 <div className="gallery_palettes_container row">
+                {palettes.map((palette, i) => 
                     <div className='col-12 col-sm-6 col-lg-4 mb-3'>
-                        <input type="radio" name='color' id='palette1'/>
-                        <label htmlFor="palette1"><img className="img_gallery img-fluid" src={Palette1} alt="palette 1" width="1920" height="1080"/></label>
+                        <input type="radio" name='color' id={`palette${i}`} checked={checkedColor === `palette${i}`} onChange={(e) => setCheckedColor(e.target.id)}/>
+                        <label htmlFor={`palette${i}`} className={checkedColor === `palette${i}` ? "shadow" : ""}><img className="img_gallery img-fluid" src={palette} alt={`palette${i}`} width="1920" height="1080"/></label>
                     </div>
-                    <div className='col-12 col-sm-6 col-lg-4 mb-3'>
-                        <input type="radio" name='color' id='palette2'/>
-                        <label htmlFor="palette2"><img className="img_gallery img-fluid" src={Palette2} alt="palette 2" width="1920" height="1080"/></label>
-                    </div>
-                    <div className='col-12 col-sm-6 col-lg-4 mb-3'>
-                        <input type="radio" name='color' id='palette3'/>
-                        <label htmlFor="palette3"><img className="img_gallery img-fluid" src={Palette3} alt="palette 3" width="1920" height="1080"/></label>
-                    </div>
-                    <div className='col-12 col-sm-6 col-lg-4 mb-3'>
-                        <input type="radio" name='color' id='palette4'/>
-                        <label htmlFor="palette4"><img className="img_gallery img-fluid" src={Palette4} alt="palette 4" width="1920" height="1080"/></label>
-                    </div>
-                    <div className='col-12 col-sm-6 col-lg-4 mb-3'>
-                        <input type="radio" name='color' id='palette5'/>
-                        <label htmlFor="palette5"><img className="img_gallery img-fluid" src={Palette5} alt="palette 5" width="1920" height="1080"/></label>
-                    </div>
-                    <div className='col-12 col-sm-6 col-lg-4 mb-3'>
-                        <input type="radio" name='color' id='palette6'/>
-                        <label htmlFor="palette6"><img className="img_gallery img-fluid" src={Palette6} alt="palette 6" width="1920" height="1080"/></label>
-                    </div>
-                    
+                    )}
                 </div>
             </div>
 
