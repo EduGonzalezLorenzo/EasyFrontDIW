@@ -37,3 +37,9 @@
 #roboto {
     font-family: 'Roboto', sans-serif;
 }
+
+.shadow {
+    -webkit-box-shadow: 10px 10px 5px 0px var(--green-light);
+    -moz-box-shadow: 10px 10px 5px 0px var(--green-light);
+    box-shadow: 10px 10px 5px 0px var(--green-light) !important;
+}
