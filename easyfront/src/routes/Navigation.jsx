@@ -23,6 +23,7 @@ export default function Navigation() {
                 </ul>
             </nav>
             <Outlet />
+            <footer className="text-center bg-danger"> footer</footer>
         </>
     );
 }

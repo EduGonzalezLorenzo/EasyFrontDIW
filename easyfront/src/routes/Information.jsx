@@ -25,7 +25,7 @@ export default function Information() {
             </section>
             <section className="row align-items-center">
                 <h2 className="col-12">Tecnología única</h2>
-                <section className="col-4 text-center d-none d-sm-block">
+                <section className="col-4 text-center d-none d-sm-block mb-3">
                     <img className="img-fluid" src={ejemplo} alt="" width="1920" height="1080"/>
                 </section>
                 <section className="col-12 col-sm-8">

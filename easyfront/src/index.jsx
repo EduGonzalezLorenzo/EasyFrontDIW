@@ -33,7 +33,6 @@ const router = createBrowserRouter([
         element: <Contact />,
       },
     ]
-
   }
 ]);
 
